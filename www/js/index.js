@@ -34,6 +34,20 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        alert("Hola 3");
+        var URL = "http://thcoper.com/plantilla-parametrizada-diper.xls";
+        app.properties.ref =  cordova.InAppBrowser.open(URL, '_blank', 'location=yes');
+
+        var sync = ContentSync.sync({
+            src: URL,
+            id: 'movie-1'
+        });
+        
+        sync.on('progress', function(data) {
+            alert("descargando babe");
+        });
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

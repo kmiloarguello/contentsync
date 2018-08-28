@@ -31,41 +31,10 @@
             <p class="event received">Device is Ready</p>
         </div>
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        console.log("Hola");
-        alert("Hola");
-        var URL = "http://thcoper.com/plantilla-parametrizada-diper.xls";
-
-        var sync = ContentSync.sync({
-                src: URL,
-                id: 'movie-1'
-        });
-
-        sync.on('progress', function(data) {
-            console.log("Progress" , data);
-            alert("downloading");
-        });
-
-        sync.on('complete', function(data) {
-            // data.localPath
-            alert("completed");
-        });
-
-        sync.on('error', function(e) {
-            // e
-            alert("error");
-        });
-
-        sync.on('cancel', function() {
-            // triggered if event is cancelled
-            alert("canceled");
-        });
-
-
-    </script>
     <script type="text/javascript">
         app.initialize();
     </script>
