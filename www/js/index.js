@@ -35,8 +35,9 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        alert("Hola 3");
-        var URL = "http://thcoper.com/plantilla-parametrizada-diper.xls";
+        alert("Hola 4");
+        //var URL = "http://thcoper.com/plantilla-parametrizada-diper.xls";
+        var URL = "https://thcoper.com/acta-evaluacion-aptitud-psicofisica-final.pdf";
         app.properties.ref =  cordova.InAppBrowser.open(URL, '_blank', 'location=yes');
 
         var sync = ContentSync.sync({
