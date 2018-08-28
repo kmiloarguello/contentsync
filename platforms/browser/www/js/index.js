@@ -35,20 +35,13 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        alert("Hola 4");
+        alert("Hola 5");
         //var URL = "http://thcoper.com/plantilla-parametrizada-diper.xls";
         var URL = "https://thcoper.com/acta-evaluacion-aptitud-psicofisica-final.pdf";
-        app.properties.ref =  cordova.InAppBrowser.open(URL, '_blank', 'location=yes');
 
-        var sync = ContentSync.sync({
-            src: URL,
-            id: 'movie-1'
-        });
-        
-        sync.on('progress', function(data) {
-            alert("descargando babe");
-        });
-
+        downloader.init({folder: "EjercitoNacional"});
+        downloader.get(URL);
+       
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
