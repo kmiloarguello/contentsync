@@ -36,6 +36,7 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         console.log("Hola");
+        alert("Hola");
         var URL = "http://thcoper.com/plantilla-parametrizada-diper.xls";
 
         var sync = ContentSync.sync({
@@ -45,18 +46,22 @@
 
         sync.on('progress', function(data) {
             console.log("Progress" , data);
+            alert("downloading");
         });
 
         sync.on('complete', function(data) {
             // data.localPath
+            alert("completed");
         });
 
         sync.on('error', function(e) {
             // e
+            alert("error");
         });
 
         sync.on('cancel', function() {
             // triggered if event is cancelled
+            alert("canceled");
         });
 
 
