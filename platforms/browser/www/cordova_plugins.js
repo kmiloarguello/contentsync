@@ -422,6 +422,54 @@ module.exports = [
         "merges": [
             "ContentSync"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+        "id": "cordova-plugin-file-transfer.FileTransferError",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.FileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/browser/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.BrowserFileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-zip/zip.js",
+        "id": "cordova-plugin-zip.Zip",
+        "pluginId": "cordova-plugin-zip",
+        "clobbers": [
+            "zip"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-md5/www/md5chksum.js",
+        "id": "cordova-plugin-file-md5.md5chksum",
+        "pluginId": "cordova-plugin-file-md5",
+        "clobbers": [
+            "md5chksum"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-downloader/www/downloader.min.js",
+        "id": "cordova-plugin-file-downloader.downloader",
+        "pluginId": "cordova-plugin-file-downloader",
+        "clobbers": [
+            "downloader"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -439,7 +487,11 @@ module.exports.metadata =
     "cordova-plugin-inappbrowser": "1.7.2",
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
-    "phonegap-plugin-contentsync": "1.4.2"
+    "phonegap-plugin-contentsync": "1.4.2",
+    "cordova-plugin-file-transfer": "1.7.1",
+    "cordova-plugin-zip": "3.1.0",
+    "cordova-plugin-file-md5": "0.3.3",
+    "cordova-plugin-file-downloader": "0.3.2"
 }
 // BOTTOM OF METADATA
 });

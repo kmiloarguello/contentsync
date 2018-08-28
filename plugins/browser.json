@@ -39,6 +39,12 @@
     },
     "phonegap-plugin-contentsync": {
       "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-file-downloader": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
     }
   },
   "dependent_plugins": {
@@ -46,6 +52,12 @@
       "PACKAGE_NAME": "com.phonegap.helloworld"
     },
     "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-zip": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-file-md5": {
       "PACKAGE_NAME": "com.phonegap.helloworld"
     }
   }
